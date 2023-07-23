@@ -8,17 +8,17 @@
 <body>
 
     <?php
-        $isMale = false;
-        $isTall = true;
-        if($isMale && $isTall) {
-            echo "You are tall male";
-        } elseif($isMale && !$isTall) {
-            echo "You are short male";
-        } elseif(!$isMale && $isTall) {
-            echo "You are not male but are tall";
-        } else {
-            echo "You are neither male nor tall";
+        function getMax($num1, $num2, $num3){
+            if($num1 > $num2 && $num1 > $num3){
+                return $num1;
+            } elseif($num2 > $num1 && $num2 > $num3) {
+                return $num2;
+            } else {
+                return $num3;
+            }
         }
+
+        echo getMax(300, 900, 1200);
     ?>
    
 </body>
