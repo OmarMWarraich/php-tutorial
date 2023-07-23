@@ -7,14 +7,15 @@
 </head>
 <body>
 
-    <form action="site.php" method="post">
-        Password: <input type="password" name="password">
-        <input type="submit">
-    </form>
-
     <?php   
-        echo $_POST["password"];
-    
+        $friends = array("Kevin", "Karen", "Oscar", "Jim");
+        $friends[1] = "Dwight";
+        echo $friends[1];
+        echo ("<br>");
+        echo count($friends);
+        echo ("<br>");
+        $friends[4] = "Angela";
+        echo count($friends);
     ?>
    
 </body>
