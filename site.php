@@ -8,12 +8,17 @@
 <body>
 
     <?php
-        function cube($num){
-            return $num * $num * $num;
+        $isMale = false;
+        $isTall = true;
+        if($isMale && $isTall) {
+            echo "You are tall male";
+        } elseif($isMale && !$isTall) {
+            echo "You are short male";
+        } elseif(!$isMale && $isTall) {
+            echo "You are not male but are tall";
+        } else {
+            echo "You are neither male nor tall";
         }
-
-        $cubeResult = cube(4);
-        echo $cubeResult;
     ?>
    
 </body>
