@@ -8,14 +8,11 @@
 <body>
     
     <?php
-        $characterName = "Tom";
-        $characterAge = 70;
-        
-        echo "There once was a man named $characterName <br>";
-        echo "He was $characterAge years old <br>";
-        $characterName = "Mike";
-        echo "He really liked the name $characterName <br>";
-        echo "But didn't like being $characterAge <br>"
+       $phrase = "To be or not to be";
+       $age = 30;
+       $gpa = 32.9;
+       $isMale = false;
+       null
     ?>
 
 </body>
