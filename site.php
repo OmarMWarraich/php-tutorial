@@ -8,19 +8,14 @@
 <body>
 
     <form action="site.php" method="get">
-        Name: <input type="text" name="name">
+        Num1: <input type="number" name="num1">
         <br>
-        Age: <input type="number" name="age">
+        Num2: <input type="number" name="num2">    
         <input type="submit">
     </form>
 
-    <!-- echo name and age -->
+    Answer: <?php echo $_GET["num1"] + $_GET["num2"] ?>
 
-    <br>
-    Your name is <?php echo $_GET["name"] ?>
-    <br>
-    Your age is <?php echo $_GET["age"] ?>
-    
 
 </body>
 </html>
