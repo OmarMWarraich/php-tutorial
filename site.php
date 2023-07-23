@@ -8,39 +8,17 @@
 <body>
     
     <?php
-        echo("Hello World");
+        $num = 10;
+        $num++;
+        echo $num;
         echo("<hr></hr>");
-        $phrase = "Hello World";
-        echo strtoupper($phrase);
+        echo pow(2, 4);
         echo("<hr></hr>");
-        echo $phrase[0];
+        echo sqrt(16);
         echo("<hr></hr>");
-        echo $phrase[1];
+        echo floor(3.9);
         echo("<hr></hr>");
-        echo $phrase[2];
-        echo("<hr></hr>");
-        echo $phrase[3];
-        echo("<hr></hr>");
-        echo $phrase[4];
-        echo("<hr></hr>");
-        echo $phrase[6];
-        echo("<hr></hr>");
-        echo $phrase[7];
-        echo("<hr></hr>");
-        echo $phrase[8];
-        echo("<hr></hr>");
-        echo $phrase[9];
-        echo("<hr></hr>");
-        echo $phrase[10];
-        echo("<hr></hr>");
-        $phrase[0] = "B";
-        echo strtoupper($phrase);
-        echo("<hr></hr>");
-        echo str_replace("llo", "Hello", $phrase);
-        echo("<hr></hr>");
-        echo str_replace("Bello", "Hello", $phrase);
-        echo("<hr></hr>");
-        echo substr($phrase, 6, 1);
+        echo ceil(3.9)
     ?>
 
 </body>
