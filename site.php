@@ -6,20 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form action="site.php" method="get">
+        Name: <input type="text" name="name">
+        <br>
+        Age: <input type="number" name="age">
+        <input type="submit">
+    </form>
+
+    <!-- echo name and age -->
+
+    <br>
+    Your name is <?php echo $_GET["name"] ?>
+    <br>
+    Your age is <?php echo $_GET["age"] ?>
     
-    <?php
-        $num = 10;
-        $num++;
-        echo $num;
-        echo("<hr></hr>");
-        echo pow(2, 4);
-        echo("<hr></hr>");
-        echo sqrt(16);
-        echo("<hr></hr>");
-        echo floor(3.9);
-        echo("<hr></hr>");
-        echo ceil(3.9)
-    ?>
 
 </body>
 </html>
