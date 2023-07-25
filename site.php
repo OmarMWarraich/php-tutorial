@@ -7,15 +7,9 @@
 </head>
 <body>
     
-    <?php
-        
-        $luckynumbers = array(4, 8, 14, 16, 23, 42);
-        
-        for ($i = 0; $i < count($luckynumbers); $i++) {
-            echo $luckynumbers[$i] . "<br>";
-        }
+    <?php include "header.html" ?>
+    <p>Hello World</p>
+    <?php include "footer.html" ?>
 
-    ?>
-   
 </body>
 </html>
