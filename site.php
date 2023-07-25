@@ -8,58 +8,39 @@
 <body>
     
     <?php 
-        // class Chef {
-        //     function makeChicken() {
-        //         echo "The chef makes chicken <br>";
-        //     }
-        //     function makeSalad() {
-        //         echo "The chef makes salad <br>";
-        //     }
-        //     function makeSpecialDish() {
-        //         echo "The chef makes bbq ribs <br>";
-        //     }
-        // }
+        
+        class Movie {
+            public $title;
+            private $rating;
 
-        // class ItalianChef extends Chef {
-        //     function makePasta() {
-        //         echo "The chef makes pasta <br>";
-        //     }
-        //     function makeSpecialDish() {
-        //         echo "The chef makes chicken parm <br>";
-        //     }
-        // }
+            function __construct($title, $rating) {
+                $this->title = $title;
+                $this->setRating($rating);
+            }
 
-        // $chef = new Chef();
-        // $chef->makeChicken();
+            function getRating() {
+                return $this->rating;
+            }
 
-        // $italianChef = new ItalianChef();
-        // $italianChef->makeChicken();
-        // $italianChef->makePasta();
-
-        // $chef->makeSpecialDish();
-
-        // $italianChef->makeSpecialDish();
-
-        class Book {
-            var $title;
-            var $author;
-            var $pages;
-
-            function __construct($aTitle, $aAuthor, $aPages) {
-                $this->title = $aTitle;
-                $this->author = $aAuthor;
-                $this->pages = $aPages;
+            function setRating($rating) {
+                if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+                    $this->rating = $rating;
+                } else {
+                    $this->rating = "NR";
+                }
             }
         }
 
-        $book1 = new Book("Harry Potter", "JK Rowling", 400);
-        $book2 = new Book("Lord of the Rings", "Tolkien", 700);
+        $avengers = new Movie("Avengers", "PG-13");
 
-        echo $book1->title;
+
+        echo $avengers->getRating();
         echo "<br>";
-        echo $book2->title;
-        echo "<br>";
-        
+        $avengers->setRating("Dog");
+
+        echo $avengers->getRating();
+
+
     ?>
 
 </body>
