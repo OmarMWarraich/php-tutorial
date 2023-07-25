@@ -6,34 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form action="site.php" method="post">
-        what was your grade?
-        <input type="text" name="grade">
-        <input type="submit">
-
+    
     <?php
-        $grade = $_POST["grade"];
-        $grade = strtoupper($grade);
-        switch($grade){
-            case "A":
-                echo "You did amazing!";
-                break;
-            case "B":
-                echo "You did pretty good!";
-                break;
-            case "C":
-                echo "You did poorly!";
-                break;
-            case "D":
-                echo "You did very bad!";
-                break;
-            case "F":
-                echo "YOU FAIL!";
-                break;
-            default:
-                echo "Invalid Grade";
-        }
+        $index = 1;
+
+        /* While loop */
+        /* while($index <= 5){
+            echo "$index <br>";
+            $index++;
+        } */
+
+        /* Do while loop */
+        do{
+            echo "$index <br>";
+            $index++;
+        }while($index <= 5);
+
     ?>
    
 </body>
