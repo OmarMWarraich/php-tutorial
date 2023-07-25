@@ -8,19 +8,12 @@
 <body>
     
     <?php
-        $index = 1;
-
-        /* While loop */
-        /* while($index <= 5){
-            echo "$index <br>";
-            $index++;
-        } */
-
-        /* Do while loop */
-        do{
-            echo "$index <br>";
-            $index++;
-        }while($index <= 5);
+        
+        $luckynumbers = array(4, 8, 14, 16, 23, 42);
+        
+        for ($i = 0; $i < count($luckynumbers); $i++) {
+            echo $luckynumbers[$i] . "<br>";
+        }
 
     ?>
    
