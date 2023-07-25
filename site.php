@@ -7,18 +7,29 @@
 </head>
 <body>
 
-    <?php
-        function getMax($num1, $num2, $num3){
-            if($num1 > $num2 && $num1 > $num3){
-                return $num1;
-            } elseif($num2 > $num1 && $num2 > $num3) {
-                return $num2;
-            } else {
-                return $num3;
-            }
-        }
+    <form action="site.php" method="post">
+        First Num: <input type="number" step="0.1" name="num1"><br>
+        OP: <input type="text" name="op"><br>
+        Second Num: <input type="number"  step="0.1" name="num2"><br>
+        <br>
+        <input type="submit">
 
-        echo getMax(300, 900, 1200);
+    <?php
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+        $op = $_POST["op"];
+
+        if($op == "+"){
+            echo $num1 + $num2;
+        } elseif($op == "-"){
+            echo $num1 - $num2;
+        } elseif($op == "/"){
+            echo $num1 / $num2;
+        } elseif($op == "*"){
+            echo $num1 * $num2;
+        } else {
+            echo "Invalid Operator";
+        }
     ?>
    
 </body>
