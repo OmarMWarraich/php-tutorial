@@ -7,9 +7,15 @@
 </head>
 <body>
     
-    <?php include "header.html" ?>
-    <p>Hello World</p>
-    <?php include "footer.html" ?>
+    <?php 
+        // $title = "My First Post";
+        // $author = "Mike";
+        // $wordCount = 400;
+        // include 'article-header.php';
+        include "useful-tools.php";
+        sayHi("Tom");
+        echo $feetInMile; 
+    ?>
 
 </body>
 </html>
