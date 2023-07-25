@@ -8,13 +8,58 @@
 <body>
     
     <?php 
-        // $title = "My First Post";
-        // $author = "Mike";
-        // $wordCount = 400;
-        // include 'article-header.php';
-        include "useful-tools.php";
-        sayHi("Tom");
-        echo $feetInMile; 
+        // class Chef {
+        //     function makeChicken() {
+        //         echo "The chef makes chicken <br>";
+        //     }
+        //     function makeSalad() {
+        //         echo "The chef makes salad <br>";
+        //     }
+        //     function makeSpecialDish() {
+        //         echo "The chef makes bbq ribs <br>";
+        //     }
+        // }
+
+        // class ItalianChef extends Chef {
+        //     function makePasta() {
+        //         echo "The chef makes pasta <br>";
+        //     }
+        //     function makeSpecialDish() {
+        //         echo "The chef makes chicken parm <br>";
+        //     }
+        // }
+
+        // $chef = new Chef();
+        // $chef->makeChicken();
+
+        // $italianChef = new ItalianChef();
+        // $italianChef->makeChicken();
+        // $italianChef->makePasta();
+
+        // $chef->makeSpecialDish();
+
+        // $italianChef->makeSpecialDish();
+
+        class Book {
+            var $title;
+            var $author;
+            var $pages;
+
+            function __construct($aTitle, $aAuthor, $aPages) {
+                $this->title = $aTitle;
+                $this->author = $aAuthor;
+                $this->pages = $aPages;
+            }
+        }
+
+        $book1 = new Book("Harry Potter", "JK Rowling", 400);
+        $book2 = new Book("Lord of the Rings", "Tolkien", 700);
+
+        echo $book1->title;
+        echo "<br>";
+        echo $book2->title;
+        echo "<br>";
+        
     ?>
 
 </body>
